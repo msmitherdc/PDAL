@@ -49,7 +49,7 @@ static const bool SHOW_EMPTY_FIELDS = true;
 // NITF file does not have a LAS data segment and a
 // corresponding image segment. (Set to false for
 // testing robustness of metadata parsing.)
-static const bool REQUIRE_LIDAR_SEGMENTS = true;
+static const bool REQUIRE_LIDAR_SEGMENTS = false;
 
 
 namespace pdal
