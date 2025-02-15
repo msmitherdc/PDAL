@@ -120,9 +120,9 @@ StringList Header::validate(uint64_t fileSize) const
 {
     StringList errors;
 
-    if (magic != "LASF")
-        errors.push_back("Invalid file signature. Was expecting 'LASF', Check the first four "
-            " bytes of the file.");
+    // if (magic != "LASF")
+    //     errors.push_back("Invalid file signature. Was expecting 'LASF', Check the first four "
+    //         " bytes of the file.");
     if (!dataCompressed() && (pointOffset > fileSize))
         errors.push_back("Invalid point offset - exceeds file size.");
     if (!dataCompressed() && (pointOffset + pointCount() * pointSize > fileSize))
